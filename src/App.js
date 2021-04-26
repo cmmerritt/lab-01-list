@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import MovieList from './MovieList';
+import moviesData from './movies.js';
 import './App.css';
 
 class App extends Component {
@@ -15,7 +16,7 @@ class App extends Component {
     
 
         <main>
-          <MovieList/>
+          <MovieList movies={moviesData}/>
         </main>
       
         <Footer />

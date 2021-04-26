@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'csnpwdt_nfiregular';
+  src: url('./fonts/csnpwdt_nfi-webfont.woff2') format('woff2'),
+       url('./fonts/csnpwdt_nfi-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .Footer {
-  padding: 5px;
-  font-size: .8rem;
-  background: rgba(0, 0, 0, 0.1);
+  display: grid;
+  padding: 20px;
+  font-size: 1.1rem;
+  background: rgb(241, 48, 48);
+  color: rgb(34, 24, 28);
+  font-family: 'csnpwdt_nfiregular';
 }
