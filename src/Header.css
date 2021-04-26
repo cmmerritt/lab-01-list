@@ -1,15 +1,14 @@
 .Header {
   display: grid;
   padding: 20px;
-  grid-template-columns: 50px 1fr;
   grid-gap: 20px;
   align-items: center;
   background: white;
 }
 
-.Header logo {
+/* .Header logo {
   width: 100%;
-}
+} */
 
 .Header h1 {
   margin: 0;
