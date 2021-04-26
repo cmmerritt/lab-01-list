@@ -3,7 +3,7 @@
   height: 100vh;
   grid-template-rows: auto 1fr auto;
   grid-gap: 20px;
-  background: lightblue;
+  background: rgb(90, 0, 1);
 }
 
 .App main {

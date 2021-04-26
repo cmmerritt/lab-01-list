@@ -1,11 +1,12 @@
 .MovieItem {
   list-style: none;
-  background: white;
+  background: rgb(246, 232, 234);
   border: 1px solid darkgray;
   padding: 10px;
+  color: rgb(34, 24, 28);
 
   display: grid;
-  grid-template-rows: 30px 120px 20px;
+  grid-template-rows: 30px 200px 20px;
   grid-gap: 10px;
 
   justify-items: center;
