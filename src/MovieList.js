@@ -7,8 +7,6 @@ class MovieList extends Component {
   render() {
     const movies = this.props.movies;
 
-    console.log(movies);
-
     return (
       <ul className="MovieList">
         {movies.map(movie => (
