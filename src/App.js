@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import MovieList from './MovieList';
 import moviesData from './movies.js';
+import MovieSearch from './MovieSearch';
 import './App.css';
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
         My React App...
         <Header/>
     
+        <MovieSearch/>
 
         <main>
           <MovieList movies={moviesData}/>
