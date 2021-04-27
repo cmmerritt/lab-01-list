@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'csnpwdt_nfiregular';
+  src: url('./fonts/csnpwdt_nfi-webfont.woff2') format('woff2'),
+       url('./fonts/csnpwdt_nfi-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.MovieSearch {
+  padding: 15px;
+  background: rgb(244, 91, 105);
+  color: rgb(34, 24, 28);
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.MovieSearch input {
+  width: 100px;
+  height: 30px;
+  flex-grow: 2;
+  outline: 0;
+  background: rgb(246, 232, 234);
+}
+
+.MovieSearch select {
+  width: 100px;
+  height: 36px;
+  flex-grow: 1;
+  background: rgb(246, 232, 234);
+}
+
+.MovieSearch .prompt {
+  color:rgb(244, 91, 105);
+}
+
+.MovieSearch button {
+  width: 150px;
+  height: 36px;
+  cursor: pointer;
+  background:rgb(241, 48, 48);
+  font-family: 'csnpwdt_nfiregular';
+  font-size: 1.2rem;
+}
