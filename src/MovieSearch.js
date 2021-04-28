@@ -6,6 +6,7 @@ export default class MovieSearch extends Component {
     nameSearch: '',
     sortField: '',
     yearSearch: '',
+    subGenreSearch: ''
   }
 
   handleNameSearch = ({ target }) => {
@@ -14,6 +15,10 @@ export default class MovieSearch extends Component {
 
   handleYearSearch = ({ target }) => {
     this.setState({ yearSearch: target.value });
+  }
+
+  handleSubgenreSearch = ({ target }) => {
+    this.setState({ subGenreSearch: target.value });
   }
 
   handleSearchChange = ({ target }) => {
@@ -27,7 +32,6 @@ export default class MovieSearch extends Component {
 
   render() {
     const { nameSearch, sortField } = this.state;
-    console.log(typeof nameSearch);
     return (
       <form className="MovieSearch" onSubmit={this.handleSubmit}>
 
@@ -44,6 +48,7 @@ export default class MovieSearch extends Component {
         >
           <option value="">sort...</option>
           <option value="name">by name</option>
+          <option value="subgenre">by subgenre</option>
           <option value="year">by year</option>
         </select>
 

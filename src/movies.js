@@ -5,7 +5,8 @@ const moviesData = [
     title: 'Psycho',
     description: 'Psycho, Alfred Hitchcock, 1960',
     keyword: 'psycho',
-    year: 1960
+    year: 1960,
+    subgenre: 'psychological horror'
   },
   {
     url:
@@ -13,7 +14,8 @@ const moviesData = [
     title: 'Carrie',
     description: 'Carrie, Brian DePalma, 1976',
     keyword: 'carrie',
-    year: 1976
+    year: 1976,
+    subgenre: 'supernatural horror'
   },
   {
     url:
@@ -21,7 +23,8 @@ const moviesData = [
     title: 'Alien',
     description: 'Alien, Ridley Scott, 1979',
     keyword: 'alien',
-    year: 1979
+    year: 1979,
+    subgenre: 'sci-fi horror'
   },
   {
     url:
@@ -29,7 +32,8 @@ const moviesData = [
     title: 'The Fly',
     description: 'The Fly, David Cronenberg, 1986',
     keyword: 'fly',
-    year: 1986
+    year: 1986,
+    subgenre: 'body horror'
   },
   {
     url:
@@ -37,7 +41,8 @@ const moviesData = [
     title: 'Halloween',
     description: 'Halloween, John Carpenter, 1978',
     keyword: 'halloween',
-    year: 1978
+    year: 1978,
+    subgenre: 'slasher'
   },
   {
     url:
@@ -45,7 +50,8 @@ const moviesData = [
     title: 'A Girl Walks Home Alone at Night',
     description: 'A Girl Walks Home Alone at Night, Ana Lily Amirpour, 2014',
     keyword: 'girl-walks',
-    year: 2014
+    year: 2014,
+    subgenre: 'supernatural horror'
   },
   {
     url:
@@ -53,7 +59,8 @@ const moviesData = [
     title: 'The Shining',
     description: 'The Shining, Stanley Kubrick, 1980',
     keyword: 'shining',
-    year: 1980
+    year: 1980,
+    subgenre: 'psychological horror'
   },
   {
     url:
@@ -61,7 +68,8 @@ const moviesData = [
     title: 'Black Christmas',
     description: 'Black Christmas, Bob Clark, 1974',
     keyword: 'black-christmas',
-    year: 1974
+    year: 1974,
+    subgenre: 'slasher'
   },
   {
     url:
@@ -69,14 +77,16 @@ const moviesData = [
     title: 'The Babadook',
     description: 'The Babadook, Jennifer Kent, 2014',
     keyword: 'babadook',
-    year: 2014
+    year: 2014,
+    subgenre: 'psychological horror'
   },
   {
     url: 'https://m.media-amazon.com/images/M/MV5BODQ5NDQ0MjkwMF5BMl5BanBnXkFtZTcwNDg1OTU4NQ@@._V1_.jpg',
     title: 'Tucker and Dale vs. Evil',
     description: 'Tucker and Dale vs. Evil, Eli Craig, 2010',
     keyword: 'tucker-dale',
-    year: 2010
+    year: 2010,
+    subgenre: 'comedy horror'
   }
 ];
   

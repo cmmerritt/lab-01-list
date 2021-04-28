@@ -11,6 +11,7 @@ class MovieItem extends Component {
         <h2>{movie.title}</h2>
         <img src={movie.url} alt={movie.title}/>
         <p>Year Made: {movie.year}</p>
+        <p>Subgenre: {movie.subgenre}</p>
       </li>
     );
   }
