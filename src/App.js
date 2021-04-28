@@ -7,18 +7,38 @@ import MovieSearch from './MovieSearch';
 import './App.css';
 
 class App extends Component {
+  state = {
+    movies: moviesData
+  }
+
+  handleSearch = ({ nameSearch, sortField }) => {
+    const titleRegex = new RegExp(nameSearch, 'i');
+    console.log(nameSearch);
+
+    const searchedData = moviesData
+      .filter(movie => {
+        if (sortField === 'year') {
+          return movie.year.toString().match(titleRegex);
+        } else {
+          return !nameSearch || movie.title.match(titleRegex);
+        }
+      });
+      
+    this.setState({ movies: searchedData });
+  }
 
   render() {
+    const { movies } = this.state;
+
     return (
       <div className="App">
-  
-        My React App...
+
         <Header/>
     
-        <MovieSearch/>
+        <MovieSearch onSearch={this.handleSearch}/>
 
         <main>
-          <MovieList movies={moviesData}/>
+          <MovieList movies={movies}/>
         </main>
       
         <Footer />
