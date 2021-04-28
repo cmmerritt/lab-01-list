@@ -4,11 +4,16 @@ import './MovieSearch.css';
 export default class MovieSearch extends Component {
   state = {
     nameSearch: '',
-    sortField: ''
+    sortField: '',
+    yearSearch: '',
   }
 
   handleNameSearch = ({ target }) => {
     this.setState({ nameSearch: target.value });
+  }
+
+  handleYearSearch = ({ target }) => {
+    this.setState({ yearSearch: target.value });
   }
 
   handleSearchChange = ({ target }) => {
@@ -17,14 +22,15 @@ export default class MovieSearch extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
+    this.props.onSearch(this.state);
   }
 
   render() {
     const { nameSearch, sortField } = this.state;
-
+    console.log(typeof nameSearch);
     return (
-      <form className="MovieSearch" onSubmit={this.handleSubmit}> 
+      <form className="MovieSearch" onSubmit={this.handleSubmit}>
+
         <input
           name="nameSearch"
           value={nameSearch}
