@@ -2,16 +2,27 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import MovieList from './MovieList';
-import moviesData from './movies.js';
-import MovieSearch from './MovieSearch';
+// import moviesData from './movies.js';
+// import MovieSearch from './MovieSearch';
+import request from 'superagent';
 import './App.css';
+
+const MOVIES_APP_URL = 'https://lab-06-node.herokuapp.com/api/movies';
 
 class App extends Component {
   state = {
-    movies: moviesData
+    // movies: moviesData
+    movies: []
   }
 
-  handleSearch = ({ nameSearch, sortField }) => {
+  async componentDidMount() {
+    const response = await request.get(MOVIES_APP_URL);
+    this.setState({
+      movies: response.body
+    });
+  }
+
+/*   handleSearch = ({ nameSearch, sortField }) => {
     const titleRegex = new RegExp(nameSearch, 'i');
     console.log(nameSearch);
 
@@ -25,7 +36,7 @@ class App extends Component {
       });
       
     this.setState({ movies: searchedData });
-  }
+  } */
 
   render() {
     const { movies } = this.state;
@@ -35,7 +46,7 @@ class App extends Component {
 
         <Header/>
     
-        <MovieSearch onSearch={this.handleSearch}/>
+        {/* <MovieSearch onSearch={this.handleSearch}/> */}
 
         <main>
           <MovieList movies={movies}/>
