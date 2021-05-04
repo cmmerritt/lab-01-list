@@ -24,15 +24,14 @@ class App extends Component {
 
 /*   handleSearch = ({ nameSearch, sortField }) => {
     const titleRegex = new RegExp(nameSearch, 'i');
-    console.log(nameSearch);
 
     const searchedData = moviesData
       .filter(movie => {
         if (sortField === 'year') {
           return movie.year.toString().match(titleRegex);
-        } else {
-          return !nameSearch || movie.title.match(titleRegex);
-        }
+        } else if (sortField === 'subgenre') {
+          return movie.subgenre.match(titleRegex);
+        } return !nameSearch || movie.title.match(titleRegex);
       });
       
     this.setState({ movies: searchedData });
